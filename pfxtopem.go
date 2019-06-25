@@ -1,6 +1,6 @@
 package pfxtopem
 
-// #cgo LDFLAGS: -lcrypto
+// #cgo LDFLAGS: -static -static-libgcc -lcrypto -ldl
 // #include <openssl/pem.h>
 // #include <openssl/err.h>
 // #include <openssl/pkcs12.h>
